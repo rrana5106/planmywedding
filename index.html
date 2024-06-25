@@ -3,10 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Plan My Wedding</title>
   </head>
   <body>
-    Plan my Wedding
+    <!-- header  -->
+    <!-- <header class="active"> -->
+    <header>
+      <a href="/" class="logo">Plan my wedding</a>
+      <a href="#" class="menu"><ion-icon name="menu-outline"></ion-icon></a>
+      <ul class="nav">
+        <li>
+          <a href="#" class="nav-btn active"
+            ><ion-icon name="home-outline"></ion-icon
+          ></a>
+        </li>
+        <li><a href="#" class="nav-btn" data-target="About">About</a></li>
+        <li><a href="#" class="nav-btn" data-target="Services">Services</a></li>
+        <li><a href="#" class="nav-btn" data-target="Porfolio">Porfolio</a></li>
+        <li><a href="#" class="nav-btn" data-target="Contact">Contact</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="search" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </header>
+    <!-- Mobile Navigation -->
+    <!-- Banner -->
+    <div class="banner container-fluid">
+      <div class="bg-slide slide-1 active">
+        <div class="content">
+          <h1>Wedding</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+            maxime reiciendis accusantium iusto reprehenderit aut libero ab
+            veniam, unde natus sequi nostrum repellendus deleniti impedit
+            corporis omnis maiores at nesciunt?
+          </p>
+        </div>
+        <div class="circle bg">
+          <img
+            src="./assets/pexels-glauber-torquato-1161877-2219195.jpg"
+            alt=""
+          />
+          <div class="circle large">
+            <img src="./assets/pexels-glauber-torquato-1161877-2219195.jpg" alt="">
+            <div class="circle small">
+              <img src="./assets/pexels-glauber-torquato-1161877-2219195.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main start -->
+    <!-- About Section -->
+    <!-- Service Section -->
+    <!-- Porfolio Section -->
+    <!-- Contact Section -->
+    <!-- Main end -->
+    <!-- JavaScript Vendors -->
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Customised JavaScript  -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
