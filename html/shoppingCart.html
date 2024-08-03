@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <!-- cusotm CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body id="page-top">
@@ -51,7 +51,7 @@
               <a class="nav-link" href="#">Photo Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/shoppingCart.html"><i class="bi bi-cart"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
             </li>
           </ul>
         </div>
@@ -64,10 +64,12 @@
         class="container h-100 d-flex flex-column justify-content-center align-items-center"
       >
         <div class="header-content text-center">
-          <h1 class="display-3 mb-4">Diaspora Wedding</h1>
+          <h1 class="display-3 mb-4">Shopping Cart</h1>
           <p class="lead mb-4">
-            We joyfully invite you to share in our happiness as we unite in
-            marriage.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+            soluta quae voluptate eos officia libero itaque quia tempora minima
+            velit possimus eum dolores sequi alias qui numquam, architecto
+            cupiditate doloremque.
           </p>
           <hr class="divider opacity-50" />
           <p class="date lead">May 5th, 2025</p>
@@ -76,115 +78,8 @@
       </div>
     </header>
 
-    <!-- Countdown -->
-    <section class="countdown text-center" id="countdown">
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col-md-8 mx-auto"></div> -->
-          <h2 class="section-heading pb-3">Our Special Day</h2>
-          <p>We're getting married in:</p>
-          <p>Time Countdown goes here</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Program -->
-    <section class="program text-center">
-      <!-- <div class="p-2"></div> -->
-      <h2 class="section-heading pb-3">Program</h2>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            Ceremony
-            <p>May 5th, 1pm</p>
-            <img src="https://placehold.co/100 " alt="" />
-          </div>
-          <div class="col">
-            Reception
-            <p>May 5th, 5pm</p>
-            <img src="https://placehold.co/100 " alt="" />
-          </div>
-        </div>
-      </div>
-      <a href="#RSVP" class="btn bt-outline btn-xl btn-custom rounded-pill"
-        >RSVP</a
-      >
-    </section>
-
-    <!-- Reservation -->
-
-    <section class="reservation text-center">
-      <h2 class="section-heading pb-3">Please Reply by May 1st</h2>
-      <div class="container">
-        <form>
-          <div class="mb-1">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Name *"
-              required
-            />
-          </div>
-
-          <div class="mb-1">
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              placeholder="Email *"
-              aria-describedby="emailHelp"
-              required
-            />
-          </div>
-          <div class="mb-1">
-            <input
-              type="text"
-              class="form-control"
-              id="ceremony"
-              placeholder="Ceremony/Reception/Both *"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-custom rounded-pill mt-3">
-            Yes, I will be there
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery text-center">
-      <h2 class="section-heading pb-3">Our Gallery</h2>
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-12 col-sm-6 col-md-4 mb-4">
-            <img
-              src="./assets/img-1.jpg"
-              class="img-fluid img-thumbnail"
-              alt="..."
-            />
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 mb-4">
-            <img
-              src="./assets/img-2.jpg"
-              class="img-fluid img-thumbnail"
-              alt="..."
-            />
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 mb-4">
-            <img
-              src="./assets/john-marfe-bitoon-6lS8bk9F68A-unsplash.jpg"
-              class="img-fluid img-thumbnail"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Product (Ecommerce Checkout Flow) -->
-    <section class="products text-center">
+    <!-- <section class="products text-center">
       <h2 class="section-heading pb-3">Our Products</h2>
       <div class="container">
         <div class="row pt-5">
@@ -232,12 +127,23 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Map container -->
-    <section class="venue text-center">
-      <h2 class="section-heading pb-3">Our Venue</h2>
-      <div id="map" style="height: 500px" class="border"></div>
+    <!-- Shopping list container -->
+    <section class="text-center">
+      <h2 class="section-heading pb-3">Shopping List</h2>
+
+      <form id="shopping-form">
+        <input
+          type="text"
+          class="form-input w-100"
+          id="shopping-input"
+          name="shopping-input"
+          placeholder="Enter item name"
+        />
+        <button class="btn btn-info">Add Item</button>
+      </form>
+      <ul id="shopping-list"></ul>
     </section>
 
     <!-- footer -->
@@ -249,11 +155,11 @@
       </p>
     </div>
     <!-- bootstrap JS -->
-    <script
+    <!-- <script
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
       async
       defer
-    ></script>
+    ></script> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -262,8 +168,12 @@
     ></script>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!-- custom JS -->
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
