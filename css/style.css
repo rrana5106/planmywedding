@@ -181,7 +181,7 @@ section {
   border-width: 5px;
 }
 
-.date {
+.date , #countdown{
   font-size: 25px;
   width: 100%;
 }
@@ -212,6 +212,7 @@ section {
   letter-spacing: 0.5px;
   font-weight: lighter;
 }
+
 
 /* Media query for smaller screens */
 @media (max-width: 1200px) {

@@ -77,10 +77,22 @@ shoppingFormEl.on("submit", handleFormSubmit);
 
 // adding event listener to the created button remove
 
-function handleRemoveBtn(event){
+function handleRemoveBtn(event) {
   const button = $(event.target);
-  const parentElement = button.parent();// to get the parent element
+  const parentElement = button.parent(); // to get the parent element
   parentElement.remove();
 }
 
-shoppingListEl.on('click', ".delete-item-btn", handleRemoveBtn);
+shoppingListEl.on("click", ".delete-item-btn", handleRemoveBtn);
+
+// countdown
+setInterval(() => {
+  const currentDay = dayjs().format("D-MMM-YYYY HH:mm:ss");
+  const countdownElement = document.querySelector("#countdown");
+  countdownElement.textContent = currentDay;
+  countdownElement.classList('btn');
+
+
+  
+}, 1000);
+
