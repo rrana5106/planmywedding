@@ -181,7 +181,8 @@ section {
   border-width: 5px;
 }
 
-.date , #countdown{
+.date,
+#countdown {
   font-size: 25px;
   width: 100%;
 }
@@ -207,12 +208,17 @@ section {
   font-weight: lighter;
 }
 
+.product-item img{
+  border: 3px solid white;
+  border-radius: 8px;
+  height: 250px;
+
+}
 .footer p {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
   letter-spacing: 0.5px;
   font-weight: lighter;
 }
-
 
 /* Media query for smaller screens */
 @media (max-width: 1200px) {
@@ -236,5 +242,8 @@ section {
 @media (max-width: 576px) {
   h1 {
     font-size: 5px; /* Smallest size for extra small screens */
+  }
+  .product-item {
+    padding-bottom: 10px;
   }
 }
