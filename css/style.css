@@ -214,6 +214,12 @@ section {
   height: 250px;
 
 }
+
+#map{
+  height: 500px;
+  width: 100%;
+}
+
 .footer p {
   font-family: "Lato", "Helvetica", "Arial", "sans-serif";
   letter-spacing: 0.5px;
