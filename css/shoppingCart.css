@@ -93,6 +93,157 @@ a:focus {
 #mainNav .navbar-nav > li > a:focus:hover {
   color: #fdcc52;
 }
+/* ------------------------- */
+/* Shopping Cart */
+.container-shopCart {
+  width: 900px;
+  min-width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 65px;
+  transition: transform 0.5s;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header .icon-cart {
+  position: relative;
+}
+header .icon-cart span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 50%;
+  right: -20px;
+}
+
+.listProduct .item img {
+  height: 150px;
+  filter: drop-shadow(0 50px 20px #0009);
+  border-radius: 10%;
+}
+.listProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding-bottom: 20px;
+}
+.listProduct .item {
+  background-color: rgba(232, 232, 178, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+}
+.listProduct .item h3 {
+  font-weight: 500;
+  font-size: large;
+  padding-top: 10px;
+}
+
+.listProduct .item .price {
+  letter-spacing: 5px;
+  font-size: small;
+}
+
+.listProduct .item button {
+  background-color: #222222;
+  color: #eee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cartTab {
+  width: 400px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  inset: 0 -400px 0 auto;
+  /* inset: 0 0 0 auto; */
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  margin-top: 55px;
+  transition: 0.5s;
+}
+
+body.showCart .cartTab{
+  inset: 0 0 0 auto;
+}
+
+body .showCart .container-shopCart{
+  transform: translateX(-250px);
+}
+
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button{
+  background-color: #fcbd20;
+  border: none;
+  font-family: Poppins;   /* need to import the font */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cartTab .btn .close{
+  background-color: #eee;
+}
+
+.cartTab .listCart .item img{
+  width: 100%;
+}
+
+.cartTab .listCart .item{
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.listCart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: #eee;
+}
+.listCart .item:nth-child(even){
+  background-color: #eee1;
+}
+.listCart{
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+  width: 0;
+}
+/* ------------------------- */
+
 
 /* Change the navbar-toggler-icon to white */
 .navbar-toggler-icon {
@@ -112,7 +263,7 @@ header.masthead {
   padding-top: 250px;
   color: black;
   /* background: url("../assets/img-3.jpg"); */
-  background-color: #EAEDED;
+  background-color: #eaeded;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +320,6 @@ section {
   color: #303639;
 }
 
-
 .footer {
   background-color: rgba(253, 204, 82, 0.3);
 }
@@ -213,7 +363,6 @@ section {
   font-weight: lighter;
 }
 
-
 /* Media query for smaller screens */
 @media (max-width: 1200px) {
   h1 {
@@ -225,11 +374,17 @@ section {
   h1 {
     font-size: 20px; /* Even smaller for medium screens */
   }
+  .listProduct{
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 10px; /* Smaller for small screens */
+  }
+  .listProduct{
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -237,4 +392,5 @@ section {
   h1 {
     font-size: 5px; /* Smallest size for extra small screens */
   }
+  
 }
