@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/shoppingCart.css" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg" id="mainNav">
       <div class="container-fluid">
@@ -42,16 +42,19 @@
               <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">RSVP</a>
+              <a class="nav-link" href="../index.html#rsvp">RSVP</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#photo-gallery"
+                >Photo Gallery</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bride & Bridegroom</a>
+              <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Photo Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-cart test"></i></a>
             </li>
           </ul>
         </div>
@@ -59,26 +62,46 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="masthead text-center p-5">
-      <div
-        class="container h-100 d-flex flex-column justify-content-center align-items-center"
-      >
+
+    <!-- <header class="masthead text-center p-5">
+      <div class="container">
         <div class="header-content text-center">
-          <h1 class="display-3 mb-4">Shopping Cart</h1>
-          <p class="lead mb-4">
-            <hr class="divider opacity-50" />
-            <div class="container">
-              hello
-            </div>
-          </p>
-          <p class="date lead">May 5th, 2025</p>
-          <!-- <a href="#download" class="btn bt-outline btn-xl">button</a> -->
+          <h1 class="display-3 mb-4">Product List</h1>
+          
+          <hr class="divider opacity-50" />
         </div>
       </div>
-    </header>
+    </header> -->
 
+    <!-- **************************************** -->
+    <div class="container-shopCart">
+      <header>
+        <div class="title">Product List</div>
+        <div class="icon-cart">
+          <i class="bi bi-cart"></i>
+          <span>0</span>
+        </div>
+      </header>
+      <div class="listProduct">
+        <div class="item">
+          <img src="/planmywedding/assets/products/shoe1.jpg" alt="" />
+          <h3>Name Product</h3>
+          <div class="price">£150</div>
+          <button class="addCart">Add To Cart</button>
+        </div>
+      </div>
+    </div>
 
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart"></div>
+      <div class="btn">
+        <button class="close">Close</button>
+        <button class="checkOut">Check Out</button>
+      </div>
+    </div>
 
+    <!-- **************************************** -->
     <!-- footer -->
     <div class="footer text-center py-2">
       <h2 class="section-heading pb-3">#DiasporaWedding</h2>
@@ -107,6 +130,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom JS -->
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/shoppingCart.js"></script>
   </body>
 </html>

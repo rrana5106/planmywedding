@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "SHOE 1",
+    "price": 150,
+    "image": "/planmywedding/assets/products/shoe1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "SANDAL 1",
+    "price": 100,
+    "image": "/planmywedding/assets/products/sandal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "SANDAL 2",
+    "price": 200,
+    "image": "/planmywedding/assets/products/sandal2.jpg"
+  },
+  {
+    "id": 4,
+    "name": "SHOE 1",
+    "price": 150,
+    "image": "/planmywedding/assets/products/shoe1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "SANDAL 1",
+    "price": 100,
+    "image": "/planmywedding/assets/products/sandal.jpg"
+  },
+  {
+    "id": 6,
+    "name": "SANDAL 2",
+    "price": 200,
+    "image": "/planmywedding/assets/products/sandal2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "SANDAL 1",
+    "price": 100,
+    "image": "/planmywedding/assets/products/sandal.jpg"
+  },
+  {
+    "id": 8,
+    "name": "SANDAL 2",
+    "price": 200,
+    "image": "/planmywedding/assets/products/sandal2.jpg"
+  }
+]

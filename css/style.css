@@ -118,7 +118,7 @@ header.masthead {
 }
 
 header.masthead .header-content h1 {
-  font-size: 50px;
+  font-size: 100px;
   font-family: "Mr Dafoe";
   letter-spacing: 1px;
   color: #ffffff;
@@ -168,8 +168,8 @@ section {
 }
 
 .countdown,
+.venue,
 .reservation,
-.products,
 .footer {
   background-color: rgba(253, 204, 82, 0.3);
 }
@@ -208,14 +208,13 @@ section {
   font-weight: lighter;
 }
 
-.product-item img{
+.product-item img {
   border: 3px solid white;
   border-radius: 8px;
   height: 250px;
-
 }
 
-#map{
+#map {
   height: 500px;
   width: 100%;
 }
